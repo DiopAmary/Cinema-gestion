@@ -1,4 +1,5 @@
 package ma.enset.cinema.models;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +17,7 @@ public class Ticket {
     private Long id;
     private String nomClient;
     private double prix;
-    @Column(unique=true)
+    @Column(unique=false, nullable = true)
     private int codePayement;
     private boolean reserve;
     @ManyToOne

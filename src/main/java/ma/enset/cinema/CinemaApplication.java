@@ -21,11 +21,11 @@ public class CinemaApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		/*restConfiguration.exposeIdsFor(Film.class);
+		restConfiguration.exposeIdsFor(Film.class);
 		cinemaInitService.initVilles(); cinemaInitService.initCinemas();
 		cinemaInitService.initSalles(); cinemaInitService.initPalces();
 		cinemaInitService.initSeances(); cinemaInitService.initCategories();
 		cinemaInitService.initFilms();cinemaInitService.initProjections();
-		cinemaInitService.initTickets();*/
+		cinemaInitService.initTickets();
 	}
 }
