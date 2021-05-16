@@ -34,7 +34,7 @@ public class CinemaRestController {
         return Files.readAllBytes(path);
     }
 
-    @PostMapping("/payerTickets")
+    @PostMapping("/api/payerTickets")
     @Transactional
     public List<Ticket> payerTickets(@RequestBody TicketFrom ticketFrom) {
         List<Ticket> listTickets=new ArrayList<>();
