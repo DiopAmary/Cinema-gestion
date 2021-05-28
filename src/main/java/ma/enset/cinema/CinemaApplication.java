@@ -1,6 +1,8 @@
 package ma.enset.cinema;
 
 import ma.enset.cinema.models.Film;
+import ma.enset.cinema.models.Salle;
+import ma.enset.cinema.models.Ticket;
 import ma.enset.cinema.services.ICinemaInitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -21,7 +23,7 @@ public class CinemaApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		restConfiguration.exposeIdsFor(Film.class);
+		restConfiguration.exposeIdsFor(Film.class, Salle.class, Ticket.class);
 		cinemaInitService.initVilles();
 		cinemaInitService.initCinemas();
 		cinemaInitService.initSalles();

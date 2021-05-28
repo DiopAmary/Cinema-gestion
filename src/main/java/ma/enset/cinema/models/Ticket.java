@@ -1,10 +1,7 @@
 package ma.enset.cinema.models;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ma.enset.cinema.models.Place;
-import ma.enset.cinema.models.Projection;
 
 import javax.persistence.*;
 
